@@ -5,16 +5,16 @@ A web platform that enables users to organize their lives by creating their own 
 
 ## Screens
 ### 1. Signup Page
-![Signup Page](https://github.com/vinod-kanigicherla/LetsOrganize/blob/main/images/LetsOrganize%20Signup.png)
+![Signup Page](https://github.com/vinod-kanigicherla/LetsOrganize/blob/master/images/LetsOrganize%20Signup.png)
 
 ### 2. Login Page
-![Login Page](https://github.com/vinod-kanigicherla/LetsOrganize/blob/main/images/LetsOrganize%20Login.png)
+![Login Page](https://github.com/vinod-kanigicherla/LetsOrganize/blob/master/images/LetsOrganize%20Login.png)
 
 ### 3. TaskList Page
-![TaskList Page](https://github.com/vinod-kanigicherla/LetsOrganize/blob/main/images/LetsOrganize%20TaskList.png)
+![TaskList Page](https://github.com/vinod-kanigicherla/LetsOrganize/blob/master/images/LetsOrganize%20TaskList.png)
 
 ### 4. Notes Page
-![NotesList Page](https://github.com/vinod-kanigicherla/LetsOrganize/blob/main/images/LetsOrganize%20NotesList.png)
+![NotesList Page](https://github.com/vinod-kanigicherla/LetsOrganize/blob/master/images/LetsOrganize%20NotesList.png)
 
 
 
