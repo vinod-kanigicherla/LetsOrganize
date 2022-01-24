@@ -1,0 +1,173 @@
+html {
+  background-color: #f5f5f5;
+  min-height: 1000px;
+  font-family: 'helvetica neue';
+}
+
+.title{
+  color: #f5f5f5;
+  padding: 10px;
+}
+
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  background-color: #35858B;
+  text-align: center;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #072227;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+.todoitem {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+
+form[action="/todo"] {
+  text-align: center;
+  margin-left: 20px;
+}
+
+button[name="list"] {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #35858B;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+}
+
+.item-input {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #4FBDBA;
+}
+
+textarea[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #4FBDBA;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.notes_title_input {
+  text-align: left;
+  height: 60px;
+  top: 10px;
+  margin-left: 20px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 360px;
+}
+
+.notes_content_input {
+  text-align: left;
+  height: 125px;
+  top: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 360px;
+}
+
+.notes_button_align {
+  align-self: right;
+}
+
+.color_scheme {
+  background-color: #35858B;
+  color: #f5f5f5;
+}
+
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 290px;
+  margin: 30px;
+  float: left;
+
+}
+.note-heading {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note-p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note-button {
+  position: relative;
+  float: right;
+  margin-right: 30px;
+  color: #35858B;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+  background-color: white;
+}

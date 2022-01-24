@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>LetsOrganize Home</title>
+
+  <!-- Bootstrap Core JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="/css/homestyles.css">
+
+  <!-- Book Favicon-->
+  <link rel="icon" href="/images/favicon.ico" type="image/gif">
+
+</head>
+
+<body>
+  <div class="btn-group color_scheme">
+    <button type="button" class="btn dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Notes
+    </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="/notes">Notes</a>
+    <a class="dropdown-item" href="/todo">TaskList</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="/login">Log Out </a>
+  </div>
+</div>
+
+  <div class="box" id="heading">
+    <h1 class = "title"> Notes </h1>
+  </div>
+  <div class="box">
+    <form action="/addNote" method="post">
+      <div class="item">
+        <input class="notes_title_input" type="text" name="noteTitle" placeholder="Title" autocomplete="off">
+      </div>
+      <div class="item">
+        <textarea class="notes_content_input" type="text" name="noteContent" placeholder="Content " autocomplete="off"></textarea>
+      </div>
+        <button class="btn btn-lg w-100 h-100 color_scheme" type="submit" name="addNote">Add Note</button>
+    </form>
+  </div>
+
+  <!-- Sample Note -->
+  <% noteList.forEach(function(note){ %>
+    <form action="/deleteNote" method="post">
+      <div class="note">
+        <h1 class="note-heading"><%= note.get('title') %></h1>
+        <p class="note-p"><%= note.get('content') %></p>
+      <button class="note-button"type="submit" name="deleteNote" value="<%= noteList.indexOf(note)%>">DELETE</button>
+     </div>
+   </form>
+  <% }) %>
+
+</body>
+</html>

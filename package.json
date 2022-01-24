@@ -1,0 +1,17 @@
+{
+  "name": "vorganizer",
+  "version": "1.0.0",
+  "description": "An organizer for school that allows to keep track of your own notes and to-do tasks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vinod Kanigicherla",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.5"
+  }
+}

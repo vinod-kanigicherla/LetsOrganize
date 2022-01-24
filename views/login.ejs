@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>LetsOrganize Log In</title>
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@800&display=swap" rel="stylesheet">
+
+  <!-- Book Favicon-->
+  <link rel="icon" href="/images/favicon.ico" type="image/gif">
+
+</head>
+
+<body class="text-center">
+
+
+  <main class="form-signin">
+    <form action="/login" method="POST">
+
+      <% if(tryAgainP) { %>
+      <div class="alert alert-danger" role="alert">
+        Incorrect password. Please try again.
+      </div>
+
+      <% } else if(tryAgainE) { %>
+      <div class="alert alert-danger" role="alert">
+        Incorrect email. Please try again.
+      </div>
+      <% } %>
+
+      <img style = "position:relative; right:78px" class="mb-4 pr-4" src="/images/vlogo2.png" alt="" width="459.09px" height="192.72px" >
+      <h1 class="h2 title-bold mb-3 text_color">LetsOrganize</h1>
+      <h1 class="h5 mb-3 fw-normal text_color">Please log in</h1>
+      <div class="form-floating">
+        <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+
+      <button class="w-100 btn color_scheme" type="submit">Login</button>
+
+      <p class="mt-2 mb-2 text-muted">&copy; 2021</p>
+
+    </form>
+
+    <form action="/signup">
+      <div class="checkbox mt-3">
+        <label>
+          <button type="submit" class="btn btn-link">Never signed up? Click here</button>
+        </label>
+      </div>
+    </form>
+
+  </main>
+</body>
+
+</html>
